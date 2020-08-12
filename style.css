@@ -7,7 +7,7 @@ html {
 }
 
 table {
-    border: 3px solid #472bc6;
+    border: 3px solid #352091;
     border-collapse: collapse;
     width: 100%;
 }
@@ -18,7 +18,7 @@ table {
 
 td, th {
     text-transform: capitalize;
-    border: 2px solid #472bc6;
+    border: 2px solid #352091;
     padding: 8px;
 }
 
@@ -34,6 +34,7 @@ th :hover {
 
 .headers a {
     text-decoration: none;
+    color: darkblue;
 }
 
 .centered-title{

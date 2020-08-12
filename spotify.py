@@ -204,7 +204,7 @@ try:
         sql_query = "INSERT into top30(position, song_name, artist_name, explicit, album_name, duration)" \
                     " values('" + values + "','" + duration + "')"
 
-        # Exxecute the query
+        # Execute the query
         cur.execute(sql_query)
 
     # Ending the connection with the database
@@ -218,7 +218,7 @@ try:
     # Write in the html file the closing tags
     write_in_file(html_file, html_text)
 
-    print ("Information has been added to the database")
+    print("Information has been added to the database")
 
 except mysql.connector.Error as e:
     print("No connection to database")
