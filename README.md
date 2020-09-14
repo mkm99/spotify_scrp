@@ -1,8 +1,8 @@
 # Spotify Top 30
-In this project, I scraped information from Spotify's website.
-I grabbed the information from the top 50 songs each week, saved it
+In this project, information from Spotify's website is scraped.
+The information from the top 50 songs each week is grabbed, saved
 in a csv file and in a database. Then, the information is displayed
-in a webpage that is able to sort the songs by position, song's name,
+in a webpage that a user is able to sort the songs by position, song's name,
 song's title, if they are explicit, and duration by clicking in the 
 table's headers.
  
