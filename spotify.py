@@ -81,6 +81,7 @@ for song in songs_raw:
     # The song might have a coma "," and it gives problems on the csv file
     # So it is being replaced by a "/"
     title = title.replace(",", "/")
+    title = title.replace("\'", "")  # line added (09/22/20) to avoid problems with mysql
 
     # Here is all the info from artists and album
     singers_container = song.find('span', class_='artists-albums')
@@ -115,6 +116,9 @@ for song in songs_raw:
     # more than 1 singer
     else:
         artists_name = artists_name.join(singers_list)
+
+    # took care of comas in artists name which gave errors with csv file (09/22/20)
+    artists_name = artists_name.replace(",", " / ")
 
     # getting the duration of each song
     duration = song.find('span', class_='total-duration').text
