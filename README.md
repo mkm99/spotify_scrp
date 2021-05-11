@@ -2,8 +2,8 @@
 In this project, information from Spotify's website is scraped.
 The information from the top 50 songs each week is grabbed, saved
 in a csv file and in a database. Then, the information is displayed
-in a webpage that a user is able to sort the songs by position, song's name,
-song's title, if they are explicit, and duration by clicking in the 
+in a webpage where a user is able to sort the songs by position, song's name,
+song's title, explicit, and duration by clicking in the 
 table's headers.
  
 
